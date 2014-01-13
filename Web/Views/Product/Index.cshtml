@@ -9,8 +9,10 @@
 
 <p>Description: @Html.PropertyFor(m => m.MetaDescription)</p>
 
+<p>Keywords: @Model.MetaKeywords</p>
+
 <div>
-  Teaser text: @Html.PropertyFor(m => m.TeaserText)
+  Teaser text: @Model.TeaserText
 </div>
 
 @section RelatedContent {
@@ -18,9 +20,9 @@
     <h2>RelatedContent section</h2>
     
     <div>
-        <h3>Unique selling points: @Html.PropertyFor(m => m.UniqueSellingPoints)</h3>
+        <h3>Unique selling points: @Model.UniqueSellingPoints</h3>
         <p>
-            @*@Html.PropertyFor(m => m.RelatedContentArea, new { Tag = "span4"})*@
+            @Html.PropertyFor(m => m.RelatedContentArea, new { Tag = "span4"})            
         </p>
     </div>
 

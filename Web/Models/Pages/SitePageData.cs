@@ -38,13 +38,23 @@ namespace EPiServer.Templates.Alloy.Models.Pages
             set { this.SetPropertyValue(p => p.MetaTitle, value); }
         }
 
+        //[Display(
+        //    Name = "Meta keywords",
+        //    GroupName = TabsEPi.Metadata,
+        //    Order = 200)]
+        //[CultureSpecific]
+        //[BackingType(typeof(PropertyStringList))]        
+        //public virtual string[] MetaKeywords { get; set; }
+
         [Display(
             Name = "Meta keywords",
             GroupName = TabsEPi.Metadata,
             Order = 200)]
         [CultureSpecific]
-        [BackingType(typeof(PropertyStringList))]        
-        public virtual string[] MetaKeywords { get; set; }
+        //[BackingType(typeof(PropertyStringList))]        
+        //public virtual string[] MetaKeywords { get; set; }
+        [BackingType(typeof(PropertyLongString))]
+        public virtual string MetaKeywords { get;set;}
 
         [Display(
             Name = "Meta description",
