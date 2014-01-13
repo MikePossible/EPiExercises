@@ -152,15 +152,19 @@
   <ItemGroup>
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\StartController.cs" />
+    <Compile Include="Controllers\TeaserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Blocks\TeaserBlock.cs" />
+    <Compile Include="Models\Media\ImageFile.cs" />
     <Compile Include="Models\Tabs\TabsEpi.cs" />
     <Compile Include="Models\Pages\ProductPage.cs" />
     <Compile Include="Models\Pages\SitePageData.cs" />
     <Compile Include="Models\Pages\StartPage.cs" />
     <Compile Include="Models\Properties\PropertyStringList.cs" />
     <Compile Include="Models\Tabs\MetadataTab.cs" />
+    <Compile Include="Models\ViewModels\TeaserBlockViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -168,6 +172,29 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="Global.asax" />
+    <Content Include="Static\gfx\carouselbackground.png" />
+    <Content Include="Static\gfx\contact.jpg" />
+    <Content Include="Static\gfx\exampelspan4.png" />
+    <Content Include="Static\gfx\experts.png" />
+    <Content Include="Static\gfx\fallows-media-wide.jpg" />
+    <Content Include="Static\gfx\leader.png" />
+    <Content Include="Static\gfx\leader2.png" />
+    <Content Include="Static\gfx\logotype.png" />
+    <Content Include="Static\gfx\meet.jpg" />
+    <Content Include="Static\gfx\New_FDT_Press_Contact_.JPG" />
+    <Content Include="Static\gfx\page-type-thumbnail-article.png" />
+    <Content Include="Static\gfx\page-type-thumbnail-contact.png" />
+    <Content Include="Static\gfx\page-type-thumbnail-product.png" />
+    <Content Include="Static\gfx\page-type-thumbnail-standard.png" />
+    <Content Include="Static\gfx\page-type-thumbnail.png" />
+    <Content Include="Static\gfx\person.png" />
+    <Content Include="Static\gfx\plan.jpg" />
+    <Content Include="Static\gfx\play.png" />
+    <Content Include="Static\gfx\playInactive.png" />
+    <Content Include="Static\gfx\productLandingv2.png" />
+    <Content Include="Static\gfx\searchbutton.png" />
+    <Content Include="Static\gfx\searchbuttonsmall.png" />
+    <Content Include="Static\gfx\track.jpg" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -194,6 +221,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Product\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Teaser\Index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

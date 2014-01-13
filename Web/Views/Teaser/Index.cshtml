@@ -1,0 +1,17 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+
+@model EpiExercises.Models.ViewModels.TeaserBlockViewModel
+
+<div>  
+  <h2>@Model.Block.TeaserHeading</h2>
+
+    <p>@Model.Block.TeaserText</p>
+    
+    <img src="@Model.Block.TeaserImage" alt="Teaser image" />    
+
+    @if (Model.Page != null)
+    {
+        <p>Redirect to: @Html.ContentLink(Model.Page)</p>
+    }
+</div>
