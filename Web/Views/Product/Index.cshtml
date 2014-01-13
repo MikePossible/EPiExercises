@@ -1,0 +1,27 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+
+@model EpiExercises.Models.Pages.ProductPage
+
+<h2>
+    PageName: @Html.PropertyFor(m => m.PageName)
+</h2>
+
+<p>Description: @Html.PropertyFor(m => m.MetaDescription)</p>
+
+<div>
+  Teaser text: @Html.PropertyFor(m => m.TeaserText)
+</div>
+
+@section RelatedContent {
+    
+    <h2>RelatedContent section</h2>
+    
+    <div>
+        <h3>Unique selling points: @Html.PropertyFor(m => m.UniqueSellingPoints)</h3>
+        <p>
+            @*@Html.PropertyFor(m => m.RelatedContentArea, new { Tag = "span4"})*@
+        </p>
+    </div>
+
+}
