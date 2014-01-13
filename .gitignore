@@ -1,11 +1,3 @@
-packages/
-Solutions/packages/
+Web/obj/
 *.suo
-*.dll
-VPP/
-*.dll
-Web/Old
-Web/bin
-Web/obj
-*.dll
 Web/App_Data/EPiServerErrors.log
