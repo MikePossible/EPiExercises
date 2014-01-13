@@ -814,3 +814,4 @@ System.Web.HttpException (0x80004005): The following sections have been defined 
    at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
    at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
    at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-01-13 14:09:38,346 [1] ERROR EPiServer.Framework.Initialization.ApplicationDomainInitializer: Wrong value of probingPath attribute in episerver.framework/scanAssembly node: 'modulesbin'. Attribute value should point to existing folder.
